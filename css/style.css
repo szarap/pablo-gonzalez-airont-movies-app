@@ -23,29 +23,31 @@ img{
 /* ------------ */
 .contenedor_ppal{
     position: relative;
-    width: 1440px;
-    height: 810px;
+    /* width: 1440px;
+    height: 810px; */
     background-image: url(../img/back.png);
+    Background-repeat: no-repeat;
+    Background-size: cover ;
     z-index: -100;
 }
 .header{
     position: absolute;
-    height: 32px;
-    width: 241px;
-    left: 599px;
-    top: 72px;
+    height: 2rem;
+    width: 15.0625rem;
+    left: 37.4375rem;
+    top: 4.5rem;
     background-image: url(../img/MOVIEfinder.png);
     background-repeat: no-repeat;
 }
 .contenedor_grid{
     display: grid;
-    grid-template-columns:44.945px 355.11px 44.945px;
+    grid-template-columns:2.8090625rem 22.194375rem 2.8090625rem;
     grid-template-rows: repeat(10, auto);
-    position: absolute; /* su padre es el article */
-    width: 445px;
-    height: 570px;
-    top: 160px;
-    left: 498px;
+    position: absolute; /* his father is the body*/
+    width: 27.8125rem;
+    height: 35.625rem;
+    top: 10rem;
+    left: 31.125rem;
     background: rgba(49, 49, 49, 0.95);
     box-shadow: 0px 6px 6px rgba(11, 11, 11, 0.8); 
     border-radius: 10px;
@@ -53,12 +55,12 @@ img{
 }
 /* contenedores laterales */
 .contenedor_grid .item:first-child{
-    grid-row: 1 /span 10;
+    grid-row: 1 /span 12;
     grid-column: 1 / 2;
 }
 
 .contenedor_grid .item:nth-child(3){
-    grid-row: 1 / span 10;
+    grid-row: 1 / span 12;
     grid-column: 3 / 4;
 }
 
@@ -66,41 +68,41 @@ img{
 .contenedor_grid .item:nth-child(2){
     grid-row: 1 / 3;
     grid-column: 2 / 3;
-    height: 46.75px;
-    margin-top: 32px;
-    margin-bottom: 19.91px;
+    height: 2.921875rem;
+    margin-top: 2rem;
+    margin-bottom: 1.244375rem;
     background-image: url(../img/img-2.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 50;
+    z-index: 20;
 }
 .contenedor_grid .item:nth-child(4){
     grid-row: 3 / 4;
     grid-column: 2 / 3;
-    height: 37.1875px;
+    height: 2.32421875rem;
     border: none;
-    margin-bottom: 10.63px;
+    margin-bottom: 0.664375rem;
 }
 
 .contenedor_grid .item:nth-child(5){
     grid-row: 4 / 5;
     grid-column: 2 / 3;
-    height: 37.1875px;
+    height: 2.32421875rem;
     border: none;
 /*     background-color: #FFFFFF; */
 }
 .item_input{
     border-radius: 5px; 
-    height: 37.1875px;
+    height: 2.32421875rem;
     width: 100%;
-    padding-left: 18.27px;
+    padding-left: 1.141875rem;
 }
 
 ::placeholder{
     color:#BCBCBC;
     font-family: Open Sans;
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-weight: 400;
     letter-spacing: 0em;
     text-align: left;
@@ -115,7 +117,7 @@ img{
 .contenedor_grid .item:nth-child(6){
     grid-row: 5 / 6;
     grid-column: 2 / 3;
-    height: 32px;
+    height: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -126,23 +128,23 @@ img{
 .item_check{
     display: flex;
     align-self: center;
-    margin-left: 15.05px;
-    width:18px; 
+    margin-left: 0.940625rem;
+    width:1.125rem; 
 }
 
 .item_check_p{
-    height: 17px; 
-    width: 101.56404876708984px; 
+    height: 1.0625rem; 
+    width: 6.347753rem; 
     font-family: Open Sans;
     font-size: 10px;
     font-weight: 400;
     text-align: left;
     color:#BCBCBC;
-    margin-right: 112.44px;
+    margin-right: 7.0275rem;
 }
 
 .item_check_link{
-    width: 83px;
+    width: 5.1875rem;
     display: flex;
     align-self: center;
     justify-self: end;
@@ -154,31 +156,30 @@ img{
     grid-column: 2 / 3;
     background-color: #2791C2;
     color: #FFFFFF;
-    height: 47px;
-    border-radius: 31px;
+    height: 2.9375rem;
+    border-radius: 1.9375rem;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
-    line-height: 20px;
+    line-height: 1.25rem;
     color: #FFFFFF;
     text-align: center;
 }
 .contenedor_grid .item:nth-child(8){
     grid-row: 7 / 8;
     grid-column: 2 / 3;
-    height: 32px;
+    height: 2rem;
     font-family: Open Sans;
     font-size: 10px;
     font-weight: 400;
-    line-height: 32px;
     letter-spacing: 0em;
     color: rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 0.3125rem;
 }
 
 .link{
@@ -193,7 +194,7 @@ img{
     grid-row: 8 / 9;
     grid-column: 2 / 3;
     color:rgba(255, 255, 255, 1);
-    height: 32px;
+    height: 2rem;
     font-family: Open Sans;
     font-size: 13px;
     font-weight: 400;
@@ -203,21 +204,20 @@ img{
 }
 
 .item_hr{
-    width: 142.12px;
+    width: 8.8825rem;
 }
 
 .contenedor_grid .item:nth-child(10){
     grid-row: 9 / 10;
     grid-column: 2 / 3;
-    height: 45px;
-    width: 358px;
-    margin-top: 10px;
+    height: 2.8125rem;
+    width: 22.375rem;
+    margin-top: 0.625rem;
     border: #FFFFFF 1px solid;
     border-radius: 35px;
     font-family: Open Sans;
     font-size: 14px;
     font-weight: 700;
-    line-height: 32px;
     letter-spacing: 0em;
     color: #FFFFFF;
     display: flex;
@@ -233,15 +233,14 @@ img{
 .contenedor_grid .item:nth-child(11){
     grid-row: 10 / 11;
     grid-column: 2 / 3;
-    height: 45px;
-    width: 358px;
+    height: 2.8175rem;
+    width: 22.375rem;
     margin-top: 10px;
     border: #FFFFFF 1px solid;
     border-radius: 35px;
     font-family: Open Sans;
     font-size: 14px;
     font-weight: 700;
-    line-height: 32px;
     letter-spacing: 0em;
     color: #FFFFFF;
     display: flex;
@@ -257,16 +256,15 @@ img{
 .contenedor_grid .item:nth-child(12){
     grid-row: 11 / 12;
     grid-column: 2 / 3;
-    height: 45px;
-    width: 358px;
-    margin-top: 10px;
-    margin-bottom: 42px;
+    height: 2.8125rem;
+    width: 22.375rem;
+    margin-top: 0.625rem;
+    margin-bottom: 2.625rem;
     border: #FFFFFF 1px solid;
-    border-radius: 35px;
+    border-radius: 2.8175rem;
     font-family: Open Sans;
     font-size: 14px;
     font-weight: 700;
-    line-height: 32px;
     letter-spacing: 0em;
     color: #FFFFFF;
     display: flex;
