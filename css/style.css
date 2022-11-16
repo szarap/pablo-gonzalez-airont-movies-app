@@ -21,16 +21,22 @@ img{
 }
 
 /* ------------ */
-.contenedor_ppal{
+
+body{
+    width: 1440px;
+    height: 810px;
     position: relative;
-    /* width: 1440px;
-    height: 810px; */
     background-image: url(../img/back.png);
     Background-repeat: no-repeat;
-    Background-size: cover ;
+    Background-size: cover;
     z-index: -100;
 }
-.header{
+.contenedor_ppal{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+header{
     position: absolute;
     height: 2rem;
     width: 15.0625rem;
@@ -43,7 +49,7 @@ img{
     display: grid;
     grid-template-columns:2.8090625rem 22.194375rem 2.8090625rem;
     grid-template-rows: repeat(10, auto);
-    position: absolute; /* his father is the body*/
+    position: absolute; /* his father is the article*/
     width: 27.8125rem;
     height: 35.625rem;
     top: 10rem;
