@@ -20,56 +20,66 @@ img{
     height: auto;
 }
 
-/* ------------ */
-
+/* ---STARTS---CSS---LOG IN----DESK & QUERIES----- */
+/* desk dimentions for figma design are: 1440 X 810 */
 body{
-    width: 1440px;
-    height: 810px;
     position: relative;
-    background-image: url(../img/back.png);
+    /* width: 1440px;
+    height: 810px; */
+    background: #1E1E1E;
+    /* background-image: url(../img/back.png);
     Background-repeat: no-repeat;
     Background-size: cover;
-    z-index: -100;
+    z-index: -100; */
 }
 .contenedor_ppal{
     position: absolute;
-    width: 100vw;
-    height: 100vh;
-}
+    width: 90em;
+    height: 50.625em;    
+    left: 0px;
+    top: 0px;
+    background-image: url(../img/back.png);
+    Background-repeat: no-repeat;
+    Background-size: cover;
+    background-position: center;
+    z-index: -100;
+} 
 header{
     position: absolute;
-    height: 2rem;
     width: 15.0625rem;
+    max-width: 15.0625rem;
+    height: 2rem;
+    max-height: 2rem;
     left: 37.4375rem;
     top: 4.5rem;
     background-image: url(../img/MOVIEfinder.png);
     background-repeat: no-repeat;
 }
 .contenedor_grid{
+    position: absolute; /* his father is body*/
     display: grid;
     grid-template-columns:2.8090625rem 22.194375rem 2.8090625rem;
     grid-template-rows: repeat(10, auto);
-    position: absolute; /* his father is the article*/
     width: 27.8125rem;
+    max-width: 27.8125rem;
     height: 35.625rem;
+    max-height: 35.625rem;
     top: 10rem;
     left: 31.125rem;
     background: rgba(49, 49, 49, 0.95);
     box-shadow: 0px 6px 6px rgba(11, 11, 11, 0.8); 
     border-radius: 10px;
-    z-index: -99;
+    /* z-index: -99; */
 }
 /* contenedores laterales */
 .contenedor_grid .item:first-child{
     grid-row: 1 /span 12;
     grid-column: 1 / 2;
 }
-
 .contenedor_grid .item:nth-child(3){
     grid-row: 1 / span 12;
     grid-column: 3 / 4;
 }
-
 /* contenedores centrales */
 .contenedor_grid .item:nth-child(2){
     grid-row: 1 / 3;
@@ -90,13 +100,11 @@ header{
     border: none;
     margin-bottom: 0.664375rem;
 }
-
 .contenedor_grid .item:nth-child(5){
     grid-row: 4 / 5;
     grid-column: 2 / 3;
     height: 2.32421875rem;
     border: none;
-/*     background-color: #FFFFFF; */
 }
 .item_input{
     border-radius: 5px; 
@@ -104,7 +112,6 @@ header{
     width: 100%;
     padding-left: 1.141875rem;
 }
-
 ::placeholder{
     color:#BCBCBC;
     font-family: Open Sans;
@@ -113,7 +120,6 @@ header{
     letter-spacing: 0em;
     text-align: left;
 }
-
 .item_pass{
     background-image:url(../img/Ellipse.png);
     background-repeat: no-repeat;
@@ -125,7 +131,7 @@ header{
     grid-column: 2 / 3;
     height: 2rem;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-start;
     font-family: Open Sans;
     font-size: 10px;
@@ -137,7 +143,6 @@ header{
     margin-left: 0.940625rem;
     width:1.125rem; 
 }
-
 .item_check_p{
     height: 1.0625rem; 
     width: 6.347753rem; 
@@ -148,7 +153,6 @@ header{
     color:#BCBCBC;
     margin-right: 7.0275rem;
 }
-
 .item_check_link{
     width: 5.1875rem;
     display: flex;
@@ -156,7 +160,6 @@ header{
     justify-self: end;
     text-align: right;
 }
-
 .contenedor_grid .item:nth-child(7){
     grid-row: 6 / 7;
     grid-column: 2 / 3;
@@ -187,7 +190,6 @@ header{
     align-items: center;
     gap: 0.3125rem;
 }
-
 .link{
     color: rgba(41, 185, 252, 1);
     font-family: Open Sans;
@@ -195,7 +197,6 @@ header{
     font-weight: 400;
     text-decoration: none;
 }
-
 .contenedor_grid .item:nth-child(9){
     grid-row: 8 / 9;
     grid-column: 2 / 3;
@@ -208,11 +209,9 @@ header{
     justify-content: center;
     align-items: center;
 }
-
 .item_hr{
     width: 8.8825rem;
 }
-
 .contenedor_grid .item:nth-child(10){
     grid-row: 9 / 10;
     grid-column: 2 / 3;
@@ -235,7 +234,6 @@ header{
     background-position-x: 18%;
     background-position-y: center;
 }
-
 .contenedor_grid .item:nth-child(11){
     grid-row: 10 / 11;
     grid-column: 2 / 3;
@@ -257,7 +255,6 @@ header{
     background-repeat: no-repeat;
     background-position-x: 18%;
     background-position-y: center;
-
 }
 .contenedor_grid .item:nth-child(12){
     grid-row: 11 / 12;
@@ -282,4 +279,38 @@ header{
     background-position-x: 18%;
     background-position-y: center;
 }
-
+/* ----QUERIES--- TODO: double check dimentions and make the queries TAB & MOB */
+  /*   @media screen and (max-width: 40em){
+    body{
+        width: 40em;
+        height: 79em;
+        background-color: #2791C2;
+    }
+    .contenedor_ppal{
+        position: absolute;
+        width: 40em;
+        height: 79em;   
+        left: 0px;
+        top: 0px;
+        background-image: url(../img/back.png);
+        Background-repeat: no-repeat;
+        Background-size: cover;
+        background-position: center;
+        z-index: -100;
+    }
+    .contenedor_grid{
+        position: absolute; 
+        display: grid;
+        width: 27.8125rem;
+        max-width: 27.8125rem;
+        height: 35.625rem;
+        max-height: 35.625rem;
+        top: 10rem;
+        left: 31.125rem;
+        background: rgba(49, 49, 49, 0.95);
+        box-shadow: 0px 6px 6px rgba(11, 11, 11, 0.8); 
+        border-radius: 10px;
+        z-index: -99; 
+    }
+}  */
+/* ---ENDS---CSS---LOG IN----DESK & QUERIES----- */
