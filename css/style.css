@@ -19,298 +19,207 @@ img{
     max-width: 100%;
     height: auto;
 }
+/* ---STARTS---CSS---HOME PAGE---- */
 
-/* ---STARTS---CSS---LOG IN----DESK & QUERIES----- */
-/* desk dimentions for figma design are: 1440 X 810 */
-body{
-    position: relative;
-    /* width: 1440px;
-    height: 810px; */
-    background: #1E1E1E;
-    /* background-image: url(../img/back.png);
-    Background-repeat: no-repeat;
-    Background-size: cover;
-    z-index: -100; */
-}
-.contenedor_ppal{
-    position: absolute;
-    width: 90em;
-    height: 50.625em;    
+.header{
+    position: sticky;
+    /* position: absolute; */
+    top:0;
+    background-color: #2791C2;
+    height: 4.3718em; /* 69.94815063476562px */
+    width: 90em; /* 1440px */
     left: 0px;
     top: 0px;
-    background-image: url(../img/back.png);
-    Background-repeat: no-repeat;
-    Background-size: cover;
-    background-position: center;
-    z-index: -100;
-} 
-header{
+    border-radius: 0px;
+    display: flex;
+        
+}
+.header img{
     position: absolute;
-    width: 15.0625rem;
-    max-width: 15.0625rem;
-    height: 2rem;
-    max-height: 2rem;
-    left: 37.4375rem;
-    top: 4.5rem;
-    background-image: url(../img/MOVIEfinder.png);
-    background-repeat: no-repeat;
+    height: 31.97629737854004px;
+    width: 161px;
+    left: 100px;
+    top: 18.985925674438477px;
 }
-.contenedor_grid{
-    position: absolute; /* his father is body*/
-    display: grid;
-    grid-template-columns:2.8090625rem 22.194375rem 2.8090625rem;
-    grid-template-rows: repeat(10, auto);
-    width: 27.8125rem;
-    max-width: 27.8125rem;
-    height: 35.625rem;
-    max-height: 35.625rem;
-    top: 10rem;
-    left: 31.125rem;
-    background: rgba(49, 49, 49, 0.95);
-    box-shadow: 0px 6px 6px rgba(11, 11, 11, 0.8); 
-    border-radius: 10px;
-    /* z-index: -99; */
-}
-/* contenedores laterales */
-.contenedor_grid .item:first-child{
-    grid-row: 1 /span 12;
-    grid-column: 1 / 2;
-}
-.contenedor_grid .item:nth-child(3){
-    grid-row: 1 / span 12;
-    grid-column: 3 / 4;
-}
-/* contenedores centrales */
-.contenedor_grid .item:nth-child(2){
-    grid-row: 1 / 3;
-    grid-column: 2 / 3;
-    height: 2.921875rem;
-    margin-top: 2rem;
-    margin-bottom: 1.244375rem;
-    background-image: url(../img/img-2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 20;
-}
-.contenedor_grid .item:nth-child(4){
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;
-    height: 2.32421875rem;
+.header input{
+    position: absolute;
+    height: 41.97px;
+    width: 384px;
+    left: 528px;
+    top: 13.989629745483398px;
+    border-radius: 5px;
     border: none;
-    margin-bottom: 0.664375rem;
+    justify-content: center;
+    align-items: center;
+    outline: none;
 }
-.contenedor_grid .item:nth-child(5){
-    grid-row: 4 / 5;
-    grid-column: 2 / 3;
-    height: 2.32421875rem;
-    border: none;
-}
-.item_input{
-    border-radius: 5px; 
-    height: 2.32421875rem;
-    width: 100%;
-    padding-left: 1.141875rem;
-}
-::placeholder{
-    color:#BCBCBC;
+.header input::placeholder{
+    color:rgba(188, 188, 188, 1);
+    height: 31.97629737854004px;
+    width: 106px;
     font-family: Open Sans;
-    font-size: 0.8125rem;
+    font-size: 14px;
     font-weight: 400;
+    line-height: 32px;
     letter-spacing: 0em;
-    text-align: left;
-}
-.item_pass{
-    background-image:url(../img/Ellipse.png);
+    text-align: left;    
+    background-image: url(../img/Vector-lupa.png);
     background-repeat: no-repeat;
-    background-position-x:93%;
-    background-position-y: center;
+    padding-left: 10%;  
 }
-.contenedor_grid .item:nth-child(6){
-    grid-row: 5 / 6;
-    grid-column: 2 / 3;
-    height: 2rem;
+.search_list{
+    position: absolute;
+    width: 384px;   
+    left: 528px;
+    top: 2.3rem;
+    border-radius: 5px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    list-style-type: none;
+    max-height: 7em;
+    padding: 0.4rem;
+    overflow-y: auto;
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+.main_home{
+height: 84.3125em;/* 1349px */
+width: 90em;/* 1440px */
+left: 0px;
+top: 0px;
+border-radius: 0px;
+background: linear-gradient(180deg, rgba(47, 47, 47, 0) 0%, #000000 100%);
+}
+
+.section_1{
+/*     background-image: url(../img/Rectangle\ 5.png); */ 
+    background-color: #00000098;
+    height: 34.349em;
+    width: 90em;   
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    font-family: Open Sans;
-    font-size: 10px;
-    font-weight: 400;
+    flex-flow: column wrap;
+    padding-top: 5.5vh;     
+    padding-left: 12.42%;
 }
-.item_check{
-    display: flex;
-    align-self: center;
-    margin-left: 0.940625rem;
-    width:1.125rem; 
-}
-.item_check_p{
-    height: 1.0625rem; 
-    width: 6.347753rem; 
-    font-family: Open Sans;
-    font-size: 10px;
-    font-weight: 400;
-    text-align: left;
-    color:#BCBCBC;
-    margin-right: 7.0275rem;
-}
-.item_check_link{
-    width: 5.1875rem;
-    display: flex;
-    align-self: center;
-    justify-self: end;
-    text-align: right;
-}
-.contenedor_grid .item:nth-child(7){
-    grid-row: 6 / 7;
-    grid-column: 2 / 3;
-    background-color: #2791C2;
-    color: #FFFFFF;
-    height: 2.9375rem;
-    border-radius: 1.9375rem;
+.item_1 h2 {
+    width: 96px;   
+    height: 15.988147735595703px;
     font-family: 'Open Sans';
     font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0FEFFD; 
+}
+
+.item_2{
+display: flex;
+justify-content: space-evenly;
+width: 96px;
+margin-bottom: 13px;
+
+
+}
+.item_2_star{
+    height: 12.657283782958984px;
+    width: 13.333333015441895px;
+    background: #FF9900;
+    
+
+}
+.item_3 h3{
+    height: 63.95px;
+    width: 604px;
+    font-family: Open Sans;
+    font-size: 56px;
     font-weight: 700;
-    font-size: 15px;
-    line-height: 1.25rem;
-    color: #FFFFFF;
-    text-align: center;
-}
-.contenedor_grid .item:nth-child(8){
-    grid-row: 7 / 8;
-    grid-column: 2 / 3;
-    height: 2rem;
-    font-family: Open Sans;
-    font-size: 10px;
-    font-weight: 400;
+    line-height: 64px;
     letter-spacing: 0em;
-    color: rgba(255, 255, 255, 1);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0.3125rem;
-}
-.link{
-    color: rgba(41, 185, 252, 1);
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0;
+} 
+.item_4 h4{
+    height: 127.90518188476562px;
+    width: 605px;
     font-family: Open Sans;
-    font-size: 10px;
+    font-size: 16px;
     font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#FFFFFF
+}
+.item_5{
+    height: 55px;
+    width: 261px;
+    left: 179px;
+    top: 402px;
+    border: none;
+    border-radius: 31px;
+    padding: 8px 18px 8px 18px;
+    background: rgba(39, 145, 194, 1);
     text-decoration: none;
-}
-.contenedor_grid .item:nth-child(9){
-    grid-row: 8 / 9;
-    grid-column: 2 / 3;
-    color:rgba(255, 255, 255, 1);
-    height: 2rem;
+    cursor: pointer;
     font-family: Open Sans;
-    font-size: 13px;
-    font-weight: 400;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.item_hr{
-    width: 8.8825rem;
-}
-.contenedor_grid .item:nth-child(10){
-    grid-row: 9 / 10;
-    grid-column: 2 / 3;
-    height: 2.8125rem;
-    width: 22.375rem;
-    margin-top: 0.625rem;
-    border: #FFFFFF 1px solid;
-    border-radius: 35px;
-    font-family: Open Sans;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
-    letter-spacing: 0em;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
     color: #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/Vector.png);
-    background-repeat: no-repeat;
-    background-position-x: 18%;
-    background-position-y: center;
 }
-.contenedor_grid .item:nth-child(11){
-    grid-row: 10 / 11;
-    grid-column: 2 / 3;
-    height: 2.8175rem;
-    width: 22.375rem;
-    margin-top: 10px;
-    border: #FFFFFF 1px solid;
-    border-radius: 35px;
+
+.section_1_bis{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:end;
+    background: #1E1E1E;
+    padding-left: 208px;
+    padding-right: 217px;
+    color: #FFFFFF;
     font-family: Open Sans;
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 700;
+    line-height: 64px;
     letter-spacing: 0em;
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/Vector-1.png);
-    background-repeat: no-repeat;
-    background-position-x: 18%;
-    background-position-y: center;
+    text-align: left;
 }
-.contenedor_grid .item:nth-child(12){
-    grid-row: 11 / 12;
-    grid-column: 2 / 3;
-    height: 2.8125rem;
-    width: 22.375rem;
-    margin-top: 0.625rem;
-    margin-bottom: 2.625rem;
-    border: #FFFFFF 1px solid;
-    border-radius: 2.8175rem;
-    font-family: Open Sans;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0em;
-    color: #FFFFFF;
+.switch{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/Vector-2.png);
-    background-repeat: no-repeat;
-    background-position-x: 18%;
-    background-position-y: center;
+    justify-content: end;
+    padding-left: 586px;
+    padding-right: 13px;
 }
-/* ----QUERIES--- TODO: double check dimentions and make the queries TAB & MOB */
-  /*   @media screen and (max-width: 40em){
-    body{
-        width: 40em;
-        height: 79em;
-        background-color: #2791C2;
-    }
-    .contenedor_ppal{
-        position: absolute;
-        width: 40em;
-        height: 79em;   
-        left: 0px;
-        top: 0px;
-        background-image: url(../img/back.png);
-        Background-repeat: no-repeat;
-        Background-size: cover;
-        background-position: center;
-        z-index: -100;
-    }
-    .contenedor_grid{
-        position: absolute; 
-        display: grid;
-        width: 27.8125rem;
-        max-width: 27.8125rem;
-        height: 35.625rem;
-        max-height: 35.625rem;
-        top: 10rem;
-        left: 31.125rem;
-        background: rgba(49, 49, 49, 0.95);
-        box-shadow: 0px 6px 6px rgba(11, 11, 11, 0.8); 
-        border-radius: 10px;
-        z-index: -99; 
-    }
-}  */
-/* ---ENDS---CSS---LOG IN----DESK & QUERIES----- */
+
+/* another way to positon de cards: with grid */
+/* grid-temple-columns: repaat(auto-fit, minmax(320px, 1fr)); */
+.section_2{
+    width: 100%;
+    height: auto;
+    background: #1E1E1E;    
+    box-shadow: 0px 6px 6px rgba(11, 11, 11, 0.8); 
+    padding: 0px 178px 159px 178px ;
+    z-index: -90;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 62px;    
+}
+
+.card{
+    height: 439.674072265625px;
+    width: 320px;
+}
+
+.card_2{
+    background-image: url(../img/Rectangle\ 39.png);
+}
+
+.card_3{
+    background-image: url(../img/Rectangle\ 40.png);
+}
+
