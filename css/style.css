@@ -34,6 +34,7 @@ img{
     display: flex;
         
 }
+
 .header img{
     position: absolute;
     height: 31.97629737854004px;
@@ -84,6 +85,7 @@ img{
     cursor: pointer;
     background-color: #f2f2f2;
 }
+
 
 .main_home{
 height: 84.3125em;/* 1349px */
